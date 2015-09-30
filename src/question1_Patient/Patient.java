@@ -3,27 +3,27 @@ package question1_Patient;
 public class Patient 
 {
 	//Instance Class Variables
-	private int _patientId;
-	private String _firstName = "";
-	private String _lastName = "";
-	private String _address = "";
-	private String _city = "";
-	private String _postalCode = "";
+	private String _patientId; //USED: String instead of int...
+	private String _firstName; //NOTE: DO WE NEED: = ""
+	private String _lastName; //NOTE: DO WE NEED: = ""
+	private String _address; //NOTE: DO WE NEED: = ""
+	private String _city; //NOTE: DO WE NEED: = ""
+	private String _postalCode; //NOTE: DO WE NEED: = ""
 				
-	//Properties ####################################
-	public int getPatientId()
+	//Properties 
+	public String getPatientId()
 	{
-		return this._patientId;
+		return _patientId;
 	}
 	
-	public void setPatientId(int patientId) 
+	public void setPatientId(String patientId) 
 	{
 		this._patientId = patientId;
 	}
 	
 	public String getFirstName()
 	{
-		return this._patientId;
+		return _firstName;
 	}
 	
 	public void setFirstName(String firstName) 
@@ -33,7 +33,7 @@ public class Patient
 	
 	public String getLastName()
 	{
-		return this._patientId;
+		return _lastName;
 	}
 	
 	public void setLastName(String lastName) 
@@ -43,7 +43,7 @@ public class Patient
 	
 	public String getAddress()
 	{
-		return this._patientId;
+		return _address;
 	}
 	
 	public void setAddress(String address) 
@@ -53,7 +53,7 @@ public class Patient
 	
 	public String getCity()
 	{
-		return _patientId;
+		return _city;
 	}
 	
 	public void setCity(String city) 
@@ -63,7 +63,7 @@ public class Patient
 	
 	public String getPostalCode()
 	{
-		return _patientId;
+		return _postalCode;
 	}
 	
 	public void setPostalCode(String postalCode) 
@@ -73,7 +73,7 @@ public class Patient
 	
 	//Constructor
 		//Multiple Arguments
-	public Patient(int _patientId, String _firstName, String _lastName,String _address, String _city, String _postalCode )
+	public Patient(String _patientId, String _firstName, String _lastName,String _address, String _city, String _postalCode )
 	{
 		this._patientId = _patientId;
 		this._firstName = _firstName;
